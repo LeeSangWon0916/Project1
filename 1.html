@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Diary</title>
+
+  <style>
+
+    .img{
+  position: relative;
+  background-image: url(5.jpg);
+  height: 45vh;
+  background-size: cover;
+  border-bottom-width:10px;
+  border-color:black;
+  border-style:solid;
+}
+
+.img-cover{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index:1;
+}
+
+.img .content{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   font-size:5rem;
+   color: white;
+   z-index: 2;
+   text-align: center;
+}
+
+.all {
+  display:grid;
+  grid-template-columns:250px 1fr;
+}
+
+.mok{
+  border-right: 4.5px black double;
+  padding :20px;
+  width: 150px;
+  padding-right : 50px;
+}
+
+.con{
+  font-size: 20px;
+  padding : 30px;
+}
+
+a{
+  color:black;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+h2{
+  padding-left:25px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="img">
+          <div class="content">
+              <h4>SangWon's Diary</h4>
+          </div>
+          <div class="img-cover"></div>
+      </div>
+
+<div class = "all">
+  <div class ="mok">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href = "1m6.html">1/6</a></li>
+    </ul>
+  </div>
+
+  <div class="con"><h1>nothing yet</h1></div>
+</div>
+</body>
+
+</html>
